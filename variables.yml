@@ -7,4 +7,4 @@
     - name: Print variable
       ansible.builtin.debug:
           msg: URL = {{ URL }}
-          #we use flower braces to access the variable.
+          # we use flower braces to access the variable.
