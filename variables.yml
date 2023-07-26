@@ -1,10 +1,9 @@
-- name: Variables
+- name: variables
   hosts: WEB
-  become: true
   vars:
     URL: google.com
   tasks:
     - name: Print variable
-      debug:
-        ansible.builtin.debug:
+      ansible.builtin.debug:
           msg: URL = {{ URL }}
+          #we use flower braces to access the variable.
