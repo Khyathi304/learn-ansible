@@ -2,11 +2,17 @@
   hosts: all
   become: true
   connection: local
+  vars:
+    fruit: true
+    vegetable: false
+
   tasks:
     - name: print fruits names
       ansible.builtin.debug:
         msg: Fruit Name - Apples
+        when: fruit is true
 
     - name: print vegetables names
       ansible.builtin.debug:
         msg: vegetable Name - Carrots
+        when: vegetable is true
