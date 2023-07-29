@@ -5,8 +5,8 @@
   tasks:
     - name: print fruits names
       ansible.builtin.debug:
-        msg: Fruit Name - Apple
+        msg: Fruit Name - Apples
 
     - name: print vegetables names
       ansible.builtin.debug:
-        msg: vegetable Name - Carrot
+        msg: vegetable Name - Carrots
