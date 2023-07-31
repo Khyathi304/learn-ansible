@@ -10,7 +10,7 @@
       ansible.builtin.debug:
         msg: Fruits - "{{ item }}"
       loop: "{{ fruits }}"
-  tasks:
+
     - name: Print Fruits local values
       ansible.builtin.debug:
         msg: Fruits - "{{ item }}"
