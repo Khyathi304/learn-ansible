@@ -1,9 +1,19 @@
-    - name: Install nginx
-      ansible.builtin.yum:
-        name: nginx
-        state: latest
-    - name: Start nginx
-      ansible.builtin.systemd:
-        name: nginx
-        state: started
-        enabled: yes
+#    - name: Install nginx
+#      ansible.builtin.yum:
+#        name: nginx
+#        state: latest
+#    - name: Start nginx
+#      ansible.builtin.systemd:
+#        name: nginx
+#        state: started
+#        enabled: yes
+
+- name: Print Variable
+  ansible.builtin.debug:
+    msg: URL = {{ URL }}
+
+- name: Print Variable task level
+  ansible.builtin.debug:
+    msg: URL = {{ URL }}
+  vars:
+    URL: tasks.google.com
