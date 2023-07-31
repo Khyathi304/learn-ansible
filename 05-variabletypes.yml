@@ -9,4 +9,4 @@
   tasks:
     ansible.builtin.debug:
       msg: Fruit Name - {{ fruit_name }}, Quantity - {{ quantity }}, For Sale - {{ for_sale }}
-      when: for_sale
+    when: for_sale
