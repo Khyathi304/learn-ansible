@@ -8,3 +8,9 @@
       ansible.builtin.debug:
           msg: URL = {{ URL }}
           # we use flower braces to access the variable.
+
+    - name: Print task Variable
+      ansible.builtin.debug:
+        msg: URL = {{ URL }}
+      vars:
+        URL: tasks.google.com
