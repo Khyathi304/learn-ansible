@@ -1,5 +1,5 @@
 - name: variables
-  hosts: WEB
+  hosts: all
   vars:
     URL: google.com
 
